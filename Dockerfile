@@ -22,7 +22,6 @@ RUN echo "add_header X-Content-Type-Options nosniff;" >> /etc/nginx/nginx.conf &
     echo "add_header X-XSS-Protection \"1; mode=block\";" >> /etc/nginx/nginx.conf
 
 # Run as non-root user
-USER nginx
 
 EXPOSE 80
 
