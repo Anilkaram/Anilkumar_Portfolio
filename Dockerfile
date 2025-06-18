@@ -5,7 +5,7 @@ FROM nginx:1.25-alpine
 # RUN rm -rf /etc/nginx/conf.d/*
 
 # Copy custom nginx config
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+# COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Copy static site files
 COPY . /usr/share/nginx/html
