@@ -16,11 +16,6 @@ RUN chown -R nginx:nginx /usr/share/nginx/html && \
     find /usr/share/nginx/html -type d -exec chmod 755 {} + && \
     find /usr/share/nginx/html -type f -exec chmod 644 {} +
 
-# Add security headers
-RUN echo "add_header X-Content-Type-Options nosniff;" >> /etc/nginx/nginx.conf && \
-    echo "add_header X-Frame-Options SAMEORIGIN;" >> /etc/nginx/nginx.conf && \
-    echo "add_header X-XSS-Protection \"1; mode=block\";" >> /etc/nginx/nginx.conf
-
 # Run as non-root user
 
 EXPOSE 80
