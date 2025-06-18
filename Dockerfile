@@ -11,7 +11,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies with audit
-RUN npm install --production --audit
+RUN npm install --production 
 
 # Copy all files
 COPY . .
