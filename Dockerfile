@@ -24,7 +24,7 @@ RUN echo "add_header X-Content-Type-Options nosniff;" >> /etc/nginx/nginx.conf &
 # Run as non-root user
 USER nginx
 
-EXPOSE 8080
+EXPOSE 80
 
 HEALTHCHECK --interval=30s --timeout=3s \
   CMD curl -f http://localhost:8080 || exit 1
