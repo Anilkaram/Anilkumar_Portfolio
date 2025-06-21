@@ -969,4 +969,24 @@ nav ul {
         width: 250px;
         height: 250px;
     }
+    
+    .contact-methods {
+        gap: 16px;
+    }
+    .contact-method {
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .contact-method i {
+        min-width: 32px;
+        min-height: 32px;
+        width: 32px;
+        height: 32px;
+        font-size: 1.1rem;
+    }
+    .contact-method a {
+        word-break: break-all;
+        font-size: 0.98rem;
+        line-height: 1.3;
+    }
 }
