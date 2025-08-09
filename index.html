@@ -226,25 +226,26 @@
             <div class="project-card glass-card">
                 <div class="project-header">
                     <div class="project-links">
-                        <a href="https://github.com/Anilkaram/Automated-CI-CD-Pipeline-for-Microservices"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/Anilkaram/Security_best_practices.git"><i class="fab fa-github"></i></a>
                     </div>
-                    <h3 class="project-title">CI/CD Pipeline to Deploy Application | Docker Stack</h3>
-                    <p class="project-description">Designed and implemented an automated CI/CD pipeline for Node.js Application with docker stack that reduced deployment time by 35% while improving reliability.</p>
+                    <h3 class="project-title">CI/CD Pipeline | END TO END Security Implementation </h3>
+                    <p class="project-description">Implementing Security practices in CI/CD pipeline to ensure code quality, code security, Image scanning, SAST(static Analysis Software Testing), DAST (Dynamic Analysis Software Testing), Infrastructure code scanning</p>
                 </div>
                 <div class="project-tech">
                     <span>Jenkins</span>
-                    <span>Git</span>
-                    <span>Docker Stack</span>
                     <span>SonarQube</span>
-                    <span>Slack</span>
+                    <span>OWASP</span>
+                    <span>Trivy</span>
+                    <span>TfSec (Aqua Security)</span>
                 </div>
                 <div class="project-details">
                     <h4>Key Achievements:</h4>
                     <ul>
-                        <li>Enabled Rapid & Reliable Deployments</li>
-                        <li>Strengthened Code & Image Security</li>
-                        <li>Achieved Consistent Build Artifacts</li>
-                        <li>Implemented Scalable Multibranch Pipelines</li>
+                        <li>At each CI/CD pipeline stage, automated security tools (SonarQube, Trivy, OWASP Dependency-Check, TfSec) scanned the code, dependencies, containers, and infrastructure for potential vulnerabilities.</li>
+                        <li>Every time a tool detected a bug or security issue, it triggered alerts, allowing immediate review.</li>
+                        <li>Issues found by SonarQube (e.g., code flaws), Trivy (e.g., insecure container images), Dependency-Check (e.g., vulnerable libraries), and TfSec (e.g., risky IaC configurations) were addressed promptly by the team before moving to the next stage.</li>
+                        <li>This process ensured that vulnerabilities were systematically identified and fixed in real-time, embedding security as an integral part of development and deployment.  </li>
+                        <li>The outcome was a secure, reliable pipeline where every discovered bug was resolved promptly, leading to higher code quality and minimized risk.</li>
                     </ul>
                 </div>
             </div>
