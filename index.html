@@ -51,7 +51,7 @@
                 <h4 class="hero-subtitle">Hi, my name is</h4>
                 <h1 class="hero-title">Karampuri Anilkumar</h1>
                 <h2 class="hero-tagline">I build cloud-native solutions.</h2>
-                <p class="hero-description">I create robust cloud-native solutions as a DevOps Engineer, focusing on scalable infrastructure, seamless CI/CD pipelines, and smart automation. My passion is helping teams deliver faster, more reliable software by bridging the gap between development and operations.</p>
+                <p class="hero-description">I create robust cloud-native solutions as a DevOps Engineer, focusing on scalable infrastructure, seamless CI/CD pipelines, and smart automation. My passion is helping teams deliver faster, more reliable software by bridging the gap between development, security and operations.</p>
                 <a href="#experience" class="btn btn-primary">
                     <span>View My Works</span>
                     <i class="fas fa-arrow-right"></i>
@@ -175,6 +175,10 @@
                         </li>
                         <li>
                             <i class="fas fa-caret-right"></i>
+                            <span>Implemented real-time canary based deployments in production using container orchestration tools Kubernetes, routing a small percentage of live user traffic to new application versions for health verification, automated rollback, and metrics-based promotion, enabling safer, zero-downtime releases and faster feedback cycles.</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-caret-right"></i>
                             <span>Used KubeCost for real-time Kubernetes cost monitoring and optimization, improving resource allocation and budget tracking.</span>
                         </li>
                         <li>
@@ -226,26 +230,24 @@
             <div class="project-card glass-card">
                 <div class="project-header">
                     <div class="project-links">
-                        <a href="https://github.com/Anilkaram/Security_best_practices.git"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/Anilkaram/AI-weather-chat-bot.git"><i class="fab fa-github"></i></a>
                     </div>
-                    <h3 class="project-title">CI/CD Pipeline | END TO END Security Implementation </h3>
-                    <p class="project-description">Implementing Security practices in CI/CD pipeline to ensure code quality, code security, Image scanning, SAST(static Analysis Software Testing), DAST (Dynamic Analysis Software Testing), Infrastructure code scanning</p>
+                    <h3 class="project-title">AI Weather Chatbot | with realtime data </h3>
+                    <p class="project-description">An interactive chatbot that answers real-time weather queries for any city in natural language, leveraging advanced natural language processing techniques.</p>
                 </div>
                 <div class="project-tech">
-                    <span>Jenkins</span>
-                    <span>SonarQube</span>
-                    <span>OWASP</span>
-                    <span>Trivy</span>
-                    <span>TfSec (Aqua Security)</span>
+                    <span>N8N</span>
+                    <span>Docker</span>
+                    <span>Gemini LLM</span>
+                    <span>Python MCP server</span>
                 </div>
                 <div class="project-details">
                     <h4>Key Achievements:</h4>
                     <ul>
-                        <li>At each CI/CD pipeline stage, automated security tools (SonarQube, Trivy, OWASP Dependency-Check, TfSec) scanned the code, dependencies, containers, and infrastructure for potential vulnerabilities.</li>
-                        <li>Every time a tool detected a bug or security issue, it triggered alerts, allowing immediate review.</li>
-                        <li>Issues found by SonarQube (e.g., code flaws), Trivy (e.g., insecure container images), Dependency-Check (e.g., vulnerable libraries), and TfSec (e.g., risky IaC configurations) were addressed promptly by the team before moving to the next stage.</li>
-                        <li>This process ensured that vulnerabilities were systematically identified and fixed in real-time, embedding security as an integral part of development and deployment.  </li>
-                        <li>The outcome was a secure, reliable pipeline where every discovered bug was resolved promptly, leading to higher code quality and minimized risk.</li>
+                        <li>Developed a weather chatbot application with integrating Google Gemini 2.5 LLM for NLP and required data retrieval from user input and processing them for required fields.</li>
+                        <li>Microservices-based infrastructure using containerized N8N workflow automation platform for orchestrating message parsing, API calls, response formatting and integrating MCP server for real time data retrieval from Open weather API.</li>
+                        <li>Implemented end-to-end conversational AI workflow where user queries trigger n8n webhook processing, Gemini LLM extracts structured parameters (location, timeframe, request type), Python MCP server retrieves live weather data, and formatted responses are delivered back through the automation pipeline to provide accurate, context-aware weather information in natural language format.</li>
+                        <li>Reliability: Each service is modular; problems in one do not halt the others, Scalability: You can host parts (n8n, MCP, UI) anywhere or together, Maintainability: Visual automation (n8n) and clear separation of logic.</li>
                     </ul>
                 </div>
             </div>
@@ -270,9 +272,9 @@
                 <div class="project-details">
                     <h4>key Achievements:</h4>
                     <ul>
-                        <li>Multi-stage Docker builds for client (Nginx+React) and server (Node.js) with optimized image sizes and security practices</li>
-                        <li>Kubernetes deployment with StatefulSets for MongoDB, Deployments for stateless services, and comprehensive health probes (liveness, readiness, startup)</li>
-                        <li>Helm charts with templated manifests, configurable values.yaml, and environment-specific deployments for easy release management</li>
+                        <li>Delivered enterprise-grade web solutions on EKS with Jenkins-driven CI/CD automation, implementing multi-layer security scanning (SonarQube, Trivy, OWASP) to ensure secure, compliant deployments across development and production environments.</li>
+                        <li>Built scalable microservices platform utilizing Docker containerization, Helm-based deployments, Infrastructure-as-Code (Terraform) on AWS, and AI-assisted debugging tools (kubectl-ai) to minimize downtime and accelerate incident response.</li>
+                        <li>multi-tier application stack (React/Nginx frontend, Node.js REST APIs, MongoDB cluster) on EKS</li>
                         <li>Minikube local development, persistent storage with PVCs, secrets management for sensitive data, and HPA for auto-scaling</li>
                         <li>Init containers for proper startup sequencing, TCP/HTTP health checks, resource limits/requests, and structured logging for observability</li>
                     </ul>
